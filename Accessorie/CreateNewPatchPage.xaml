@@ -1,0 +1,50 @@
+﻿<Page x:Class="Accessorie.CreateNewPatchPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Accessorie"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="CreateNewPatchPage">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="New Patch" FontSize="50" Grid.ColumnSpan="2" Grid.Row="0"/>
+        <TextBlock Text="Detail" Grid.Column="0" Grid.Row="1" FontSize="50"/>
+        <TextBlock Text="Warehouse" Grid.Column="0" Grid.Row="2" FontSize="50"/>
+        <TextBlock Text="Price" Grid.Column="0" Grid.Row="3" FontSize="50"/>
+
+        <ComboBox x:Name="cbDetail" ItemsSource="{Binding Details}" Grid.Row="1" Grid.Column="1" Margin="20" SelectionChanged="cbSelectionChanged">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <TextBlock Text="{Binding Name}"/>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+        <ComboBox x:Name="cbWarehouse" ItemsSource="{Binding Warehouses}" Grid.Row="2" Grid.Column="1" Margin="20">
+            <ComboBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding Street}"/>
+                        <TextBlock Text="{Binding HouseNumber}"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ComboBox.ItemTemplate>
+        </ComboBox>
+
+        <TextBlock x:Name="tbPrice" Grid.Row="3" Grid.Column="1"/>
+        <Button Content="Create" Grid.Row="4" Grid.ColumnSpan="2" Click="btnCreateClick"/>
+    </Grid>
+</Page>

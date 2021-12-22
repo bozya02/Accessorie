@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="bafe90c1f830448ab88bba264ed61675" Name="Diagram1">
+        <EntityTypeShape EntityType="AccessoriesModel.Detail" Width="1.5" PointX="0.75" PointY="4.25" />
+        <EntityTypeShape EntityType="AccessoriesModel.Machine" Width="1.5" PointX="6" PointY="3.875" />
+        <EntityTypeShape EntityType="AccessoriesModel.MachineType" Width="1.5" PointX="3.75" PointY="1.375" />
+        <EntityTypeShape EntityType="AccessoriesModel.Patch" Width="1.5" PointX="3" PointY="3.875" />
+        <EntityTypeShape EntityType="AccessoriesModel.Repairer" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AccessoriesModel.sysdiagrams" Width="1.5" PointX="2.75" PointY="7.875" />
+        <EntityTypeShape EntityType="AccessoriesModel.Warehouse" Width="1.5" PointX="0.75" PointY="7.625" />
+        <AssociationConnector Association="AccessoriesModel.FK_Patch_Detail" />
+        <AssociationConnector Association="AccessoriesModel.FK_Machine_MachineType" />
+        <AssociationConnector Association="AccessoriesModel.FK_Patch_Repairer" />
+        <AssociationConnector Association="AccessoriesModel.FK_Patch_Warehouse" />
+        <AssociationConnector Association="AccessoriesModel.Detail_Machine" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
