@@ -64,85 +64,95 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="Accessories.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Accessories.tt</DependentUpon>
-    </Compile>
-    <Compile Include="AdminPage.xaml.cs">
+    <Compile Include="Pages\AdminPages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="AuthorizationPage.xaml.cs">
+    <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CreateNewPatchPage.xaml.cs">
+    <Compile Include="Pages\AdminPages\CreateNewPatchPage.xaml.cs">
       <DependentUpon>CreateNewPatchPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="DBConnection.cs" />
     <Compile Include="Detail.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DetailPage.xaml.cs">
+    <Compile Include="Pages\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Machine.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="MachineRepairerPage.xaml.cs">
+    <Compile Include="Pages\MachineRepairerPage.xaml.cs">
       <DependentUpon>MachineRepairerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MachinesPage.xaml.cs">
+    <Compile Include="Pages\MachinesPage.xaml.cs">
       <DependentUpon>MachinesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MachineType.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
-    </Compile>
-    <Compile Include="MachinePage.xaml.cs">
+    <Compile Include="Pages\MachinePage.xaml.cs">
       <DependentUpon>MachinePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MachineType.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
     <Compile Include="MyPatch.cs" />
     <Compile Include="Patch.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="RegistrationPage.xaml.cs">
+    <Compile Include="Pages\RegistrationPage.xaml.cs">
       <DependentUpon>RegistrationPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Repairer.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="RepairerPage.xaml.cs">
+    <Compile Include="Pages\RepairerPage.xaml.cs">
       <DependentUpon>RepairerPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="sysdiagrams.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="ViewMyPatches.xaml.cs">
+    <Compile Include="Pages\ViewMyPatches.xaml.cs">
       <DependentUpon>ViewMyPatches.xaml</DependentUpon>
     </Compile>
     <Compile Include="Warehouse.cs">
-      <DependentUpon>Accessories.tt</DependentUpon>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Page Include="AdminPage.xaml">
+    <Page Include="Pages\AdminPages\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="AuthorizationPage.xaml">
+    <Page Include="Pages\AuthorizationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CreateNewPatchPage.xaml">
+    <Page Include="Pages\AdminPages\CreateNewPatchPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="DetailPage.xaml">
+    <Page Include="Pages\DetailPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MachineRepairerPage.xaml">
+    <Page Include="Pages\MachineRepairerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MachinesPage.xaml">
+    <Page Include="Pages\MachinesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -150,16 +160,6 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="Accessories.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Accessories.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Accessories.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Accessories.edmx</DependentUpon>
-    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -168,19 +168,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="MachinePage.xaml">
+    <Page Include="Pages\MachinePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RegistrationPage.xaml">
+    <Page Include="Pages\RegistrationPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="RepairerPage.xaml">
+    <Page Include="Pages\RepairerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ViewMyPatches.xaml">
+    <Page Include="Pages\ViewMyPatches.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -203,12 +203,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EntityDeploy Include="Accessories.edmx">
+    <EntityDeploy Include="Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>Accessories.Designer.cs</LastGenOutput>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
     </EntityDeploy>
-    <None Include="Accessories.edmx.diagram">
-      <DependentUpon>Accessories.edmx</DependentUpon>
+    <None Include="Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
     </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -220,20 +220,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Accessories.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Accessories.Context.cs</LastGenOutput>
-      <DependentUpon>Accessories.edmx</DependentUpon>
-    </Content>
-    <Content Include="Accessories.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Accessories.edmx</DependentUpon>
-      <LastGenOutput>Accessories.cs</LastGenOutput>
-    </Content>
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

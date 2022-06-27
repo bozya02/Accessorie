@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/Accessorie/Model1.edmx
+/Accessorie/Model1.edmx.diagram
+/Accessorie/Model1.cs
+/Accessorie/Model1.Context.tt
+/Accessorie/Model1.Designer.cs
+/Accessorie/Model1.Context.cs
+/Accessorie/Model1.tt
