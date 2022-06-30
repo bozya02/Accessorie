@@ -34,5 +34,10 @@ namespace Accessorie
         {
             NavigationService.Navigate(new MachinesPage());            
         }
+
+        private void Detail_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new DetailAdminPage());
+        }
     }
 }

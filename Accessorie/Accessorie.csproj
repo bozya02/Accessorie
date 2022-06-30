@@ -64,8 +64,14 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Pages\AdminPages\AddDetailPage.xaml.cs">
+      <DependentUpon>AddDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminPages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\DetailAdminPage.xaml.cs">
+      <DependentUpon>DetailAdminPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
@@ -86,10 +92,10 @@
     <Compile Include="Pages\MachineRepairerPage.xaml.cs">
       <DependentUpon>MachineRepairerPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MachinesPage.xaml.cs">
+    <Compile Include="Pages\AdminPages\MachinesPage.xaml.cs">
       <DependentUpon>MachinesPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Pages\MachinePage.xaml.cs">
+    <Compile Include="Pages\AdminPages\MachinePage.xaml.cs">
       <DependentUpon>MachinePage.xaml</DependentUpon>
     </Compile>
     <Compile Include="MachineType.cs">
@@ -132,7 +138,15 @@
     <Compile Include="Warehouse.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Page Include="Pages\AdminPages\AddDetailPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AdminPages\AdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\DetailAdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -152,7 +166,7 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Pages\MachinesPage.xaml">
+    <Page Include="Pages\AdminPages\MachinesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -168,7 +182,7 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="Pages\MachinePage.xaml">
+    <Page Include="Pages\AdminPages\MachinePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
