@@ -39,5 +39,10 @@ namespace Accessorie
         {
             NavigationService.Navigate(new DetailAdminPage());
         }
+        private void WareHouse_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new WareHousesPage());
+        }
+
     }
 }

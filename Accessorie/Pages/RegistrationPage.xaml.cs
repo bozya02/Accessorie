@@ -40,5 +40,14 @@ namespace Accessorie
 
             NavigationService.GoBack();
         }
+
+        private void tb_PreviewTextInput(object sender, TextCompositionEventArgs e)
+        {
+            if (!Char.IsLetter(e.Text, 0))
+            {
+                e.Handled = true;
+            }
+        }
+
     }
 }

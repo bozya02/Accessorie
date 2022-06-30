@@ -67,11 +67,17 @@
     <Compile Include="Pages\AdminPages\AddDetailPage.xaml.cs">
       <DependentUpon>AddDetailPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\AdminPages\AddWareHousePage.xaml.cs">
+      <DependentUpon>AddWareHousePage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\AdminPages\AdminPage.xaml.cs">
       <DependentUpon>AdminPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AdminPages\DetailAdminPage.xaml.cs">
       <DependentUpon>DetailAdminPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Pages\AdminPages\WareHousesPage.xaml.cs">
+      <DependentUpon>WareHousesPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Pages\AuthorizationPage.xaml.cs">
       <DependentUpon>AuthorizationPage.xaml</DependentUpon>
@@ -142,11 +148,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Pages\AdminPages\AddWareHousePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Pages\AdminPages\AdminPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\AdminPages\DetailAdminPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\AdminPages\WareHousesPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
