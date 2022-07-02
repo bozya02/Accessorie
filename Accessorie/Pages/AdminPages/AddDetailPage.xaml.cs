@@ -38,7 +38,7 @@ namespace Accessorie
                 DBConnection.connection.Detail.Add(m);
                 DBConnection.connection.SaveChanges();
 
-                NavigationService.GoBack();
+                NavigationService.Navigate(new DetailAdminPage());
             }
             catch
             {
@@ -49,7 +49,7 @@ namespace Accessorie
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new DetailAdminPage());
         }
 
         private void tbPrice_PreviewTextInput(object sender, TextCompositionEventArgs e)

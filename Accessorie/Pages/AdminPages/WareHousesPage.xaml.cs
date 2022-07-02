@@ -39,7 +39,7 @@ namespace Accessorie
 
         private void btnBackClick(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new AdminPage());
         }
 
         private void btnRemoveClick(object sender, RoutedEventArgs e)

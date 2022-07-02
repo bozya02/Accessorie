@@ -47,7 +47,7 @@ namespace Accessorie
                 DBConnection.connection.Machine.Add(m);
                 DBConnection.connection.SaveChanges();
 
-                NavigationService.GoBack();
+                NavigationService.Navigate(new MachinesPage());
             }
             catch
             {
@@ -58,7 +58,7 @@ namespace Accessorie
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new MachinesPage());
         }
     }
 }

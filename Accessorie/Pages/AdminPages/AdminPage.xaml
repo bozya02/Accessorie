@@ -29,6 +29,5 @@
         <Button Content="Machine" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" Margin="15" Click="btnMechineClick"/>
         <Button Content="Warehouse" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Right" Margin="15" Click="WareHouse_Click"/>
         <Button Content="Repairer" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" Margin="15" Click="Repairer_Click"/>
-        <Button Content="Detail-Machine" Grid.Row="3" Grid.ColumnSpan="2" HorizontalAlignment="Center"/>
     </Grid>
 </Page>

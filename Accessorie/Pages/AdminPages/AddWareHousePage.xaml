@@ -32,6 +32,6 @@
         <TextBox x:Name="tbHouse" Grid.Row="2" Grid.Column="1" Margin="10"/>
         <TextBox x:Name="tbArea" Grid.Row="3" Grid.Column="1" Margin="10" PreviewTextInput="TextBlock_PreviewTextInput"/>
 
-        <Button Content="Add Machine" Grid.Row="5" Grid.ColumnSpan="2" Click="btnCreateClick"/>
+        <Button Content="Add Warehouse" Grid.Row="5" Grid.ColumnSpan="2" Click="btnCreateClick"/>
     </Grid>
 </Page>

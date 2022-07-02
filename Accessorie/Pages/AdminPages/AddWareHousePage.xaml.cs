@@ -43,7 +43,7 @@ namespace Accessorie
                     DBConnection.connection.Warehouse.Add(m);
                     DBConnection.connection.SaveChanges();
 
-                    NavigationService.GoBack();
+                    NavigationService.Navigate(new WareHousesPage());
                 }
                 catch
                 {
@@ -60,7 +60,7 @@ namespace Accessorie
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new WareHousesPage());
         }
 
         private void TextBlock_PreviewTextInput(object sender, TextCompositionEventArgs e)
