@@ -44,5 +44,9 @@ namespace Accessorie
             NavigationService.Navigate(new WareHousesPage());
         }
 
+        private void Repairer_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Pages.AdminPages.RepairerPage());
+        }
     }
 }
