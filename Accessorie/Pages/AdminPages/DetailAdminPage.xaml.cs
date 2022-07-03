@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClosedXML.Excel;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -13,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+
 
 namespace Accessorie
 {
@@ -72,5 +74,29 @@ namespace Accessorie
             }
 
         }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+            var workbook = new XLWorkbook();
+            workbook.AddWorksheet("Details");
+            var first = workbook.Worksheet("Details");
+
+            first.Cell("A1").Value = "Name";
+            first.Cell("B1").Value = "Price";
+
+            int row = 2;
+            foreach (var item in Details)
+            {
+                first.Cell("A" + row.ToString()).Value = item.Name;
+                first.Cell("B" + row.ToString()).Value = item.Price;
+                row++;
+            }
+
+            workbook.SaveAs(@"C:\Users\USER\Desktop\details.xlsx");
+
+            MessageBox.Show("Excell book is successfully created in a Desktop");
+        }
+
+
     }
 }

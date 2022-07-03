@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using System.Collections.ObjectModel;
+using ClosedXML.Excel;
 
 namespace Accessorie
 {
@@ -71,6 +72,30 @@ namespace Accessorie
                 MessageBox.Show("Error", "Error");
             }
 
+        }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+            var workbook = new XLWorkbook();
+            workbook.AddWorksheet("Warehouses");
+            var first = workbook.Worksheet("Warehouses");
+
+            first.Cell("A1").Value = "Street";
+            first.Cell("B1").Value = "HouseNumber";
+            first.Cell("C1").Value = "Area";
+
+            int row = 2;
+            foreach (var item in Warehouses)
+            {
+                first.Cell("A" + row.ToString()).Value = item.Street;
+                first.Cell("B" + row.ToString()).Value = item.HouseNumber;
+                first.Cell("C" + row.ToString()).Value = item.Area;
+                row++;
+            }
+
+            workbook.SaveAs(@"C:\Users\USER\Desktop\warehouses.xlsx");
+
+            MessageBox.Show("Excell book is successfully created in a Desktop");
         }
     }
 }

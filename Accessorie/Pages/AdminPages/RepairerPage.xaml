@@ -32,5 +32,8 @@
                 <DataGridTextColumn Header="Patches" Binding="{Binding Patch.Count}"/>
             </DataGrid.Columns>
         </DataGrid>
+
+        <Button Content="ToExcell" Grid.Row="2" Grid.Column="2" Padding="5" VerticalAlignment="Bottom" HorizontalAlignment="Center" Margin="10, 0" Click="Export_Click"/>
+
     </Grid>
 </Page>

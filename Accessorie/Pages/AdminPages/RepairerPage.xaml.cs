@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 using System.Collections.ObjectModel;
+using ClosedXML.Excel;
 
 namespace Accessorie.Pages.AdminPages
 {
@@ -50,6 +51,33 @@ namespace Accessorie.Pages.AdminPages
         private void btnBackClick(object sender, RoutedEventArgs e)
         {
             NavigationService.GoBack();
+        }
+
+        private void Export_Click(object sender, RoutedEventArgs e)
+        {
+            var workbook = new XLWorkbook();
+            workbook.AddWorksheet("Repairers");
+            var first = workbook.Worksheet("Repairers");
+
+            first.Cell("A1").Value = "FirstName";
+            first.Cell("B1").Value = "LastName";
+            first.Cell("C1").Value = "Login";
+            first.Cell("D1").Value = "Patches";
+
+            int row = 2;
+            foreach (var item in Repairers)
+            {
+                first.Cell("A" + row.ToString()).Value = item.FirstName;
+                first.Cell("B" + row.ToString()).Value = item.LastName;
+                first.Cell("C" + row.ToString()).Value = item.Login;
+                first.Cell("D" + row.ToString()).Value = item.Patch.Count;
+                row++;
+            }
+
+            workbook.SaveAs(@"C:\Users\USER\Desktop\repairers.xlsx");
+
+            MessageBox.Show("Excell book is successfully created in a Desktop");
+
         }
     }
 }

@@ -28,8 +28,8 @@
         <TextBlock Text="Name" Grid.Column="0" Grid.Row="2" FontSize="50"/>
         <TextBlock Text="Price" Grid.Column="0" Grid.Row="3" FontSize="50"/>
 
-        <TextBox x:Name="tbName" Grid.Row="2" Grid.Column="1" Margin="10"/>
-        <TextBox x:Name="tbPrice" Grid.Row="3" Grid.Column="1" Margin="10" PreviewTextInput="tbPrice_PreviewTextInput"/>
+        <TextBox x:Name="tbName" Grid.Row="2" Grid.Column="1" Margin="10" FontSize="50"/>
+        <TextBox x:Name="tbPrice" Grid.Row="3" Grid.Column="1" Margin="10" FontSize="50" PreviewTextInput="tbPrice_PreviewTextInput"/>
 
         <Button Content="Add Detail" Grid.Row="5" Grid.ColumnSpan="2" Click="btnCreateClick"/>
     </Grid>

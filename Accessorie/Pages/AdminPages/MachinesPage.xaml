@@ -11,7 +11,8 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
-            <ColumnDefinition Width="9*"/>
+            <ColumnDefinition Width="4.5*"/>
+            <ColumnDefinition Width="4.5*"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
@@ -22,10 +23,11 @@
 
         <Button Content="Back" Grid.Row="0" Grid.Column="0" Padding="3" Click="btnBackClick"/>
         <Button Content="Add" Grid.Row="1" Grid.Column="0" Padding="5" VerticalAlignment="Bottom" Margin="0, 20" Click="btnAddClick"/>
-        <Button Content="Remove" Grid.Row="2" Grid.Column="1" Padding="5" VerticalAlignment="Bottom" Margin="2" Click="btnRemoveClick"/>
-        <TextBlock Text="Machines" Grid.Row="0" Grid.ColumnSpan="2"/>
+        <Button Content="Remove" Grid.Row="2" Grid.Column="1" Padding="5" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10, 0" Click="btnRemoveClick"/>
+        <Button Content="ToExcell" Grid.Row="2" Grid.Column="2" Padding="5" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="10, 0" Click="Export_Click"/>
+        <TextBlock Text="Machines" Grid.Row="0" Grid.ColumnSpan="3"/>
 
-        <DataGrid x:Name="dgMachines" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Machines}" CellEditEnding="dgMachinesCellEditEnding" CanUserAddRows="False">
+        <DataGrid x:Name="dgMachines" AutoGenerateColumns="False" Grid.Column="1" Grid.Row="1" Grid.ColumnSpan="2" ItemsSource="{Binding Machines}" CellEditEnding="dgMachinesCellEditEnding" CanUserAddRows="False">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Name" Binding="{Binding Name}" />
                 <DataGridTextColumn Header="Type" Binding="{Binding MachineType.Name}" IsReadOnly="True"/>
